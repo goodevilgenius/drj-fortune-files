@@ -225,7 +225,7 @@ Mathematicians stand on each others' shoulders and computer scientists stand on 
 It's not that Perl programmers are idiots, it's that the language rewards idiotic behavior in a way that no other language or tool has ever done.
      -- Erik Naggum, comp.lang.lisp
 %
-Out-of-band == should be on a separate channel…
+Out-of-band == should be on a separate channel...
      -- Al Viro
 %
 It's a curious thing about our industry: not only do we not learn from our mistakes, we also don't learn from our successes.
@@ -604,7 +604,7 @@ Program testing can be a very effective way to show the presence of bugs, but is
 The competent programmer is fully aware of the limited size of his own skull. He therefore approaches his task with full humility, and avoids clever tricks like the plague.
      -- Edsger W. Dijkstra
 %
-Parkinson's Law Otherwise known as the law of bureaucracy, this law states that…
+Parkinson's Law Otherwise known as the law of bureaucracy, this law states that...
 
 "Work expands so as to fill the time available for its completion."
 
@@ -620,7 +620,7 @@ What I cannot build, I do not understand.
 If we'd asked the customers what they wanted, they would have said "faster horses"
      -- Henry Ford
 %
-I (…) am rarely happier than when spending an entire day programming my computer to perform automatically a task that would otherwise take me a good ten seconds to do by hand.
+I (...) am rarely happier than when spending an entire day programming my computer to perform automatically a task that would otherwise take me a good ten seconds to do by hand.
      -- Douglas Adams, Last Chance to See
 %
 Programming is not a zero-sum game. Teaching something to a fellow programmer doesn't take it away from you. I'm happy to share what I can, because I'm in it for the love of programming. The Ferraris are just gravy, honest!
@@ -663,7 +663,7 @@ Once a new technology starts rolling, if you're not part of the steamroller, you
 Einstein argued that there must be simplified explanations of nature, because God is not capricious or arbitrary. No such faith comforts the software engineer.
      -- Fred Brooks
 %
-… the cost of adding a feature isn't just the time it takes to code it. The cost also includes the addition of an obstacle to future expansion. … The trick is to pick the features that don't fight each other.
+... the cost of adding a feature isn't just the time it takes to code it. The cost also includes the addition of an obstacle to future expansion. ... The trick is to pick the features that don't fight each other.
      -- John Carmack
 %
 With diligence it is possible to make anything run slowly.
@@ -800,7 +800,7 @@ If it doesn't work, it doesn't matter how fast it doesn't work.
 Simplicity is hard to build, easy to use, and hard to charge for. Complexity is easy to build, hard to use, and easy to charge for.
      -- Chris Sacca
 %
-… what society overwhelmingly asks for is snake oil. Of course, the snake oil has the most impressive names — otherwise you would be selling nothing — like "Structured Analysis and Design", "Software Engineering", "Maturity Models", "Management Information Systems", "Integrated Project Support Environments" "Object Orientation" and "Business Process Re-engineering" (the latter three being known as IPSE, OO and BPR, respectively).
+... what society overwhelmingly asks for is snake oil. Of course, the snake oil has the most impressive names — otherwise you would be selling nothing — like "Structured Analysis and Design", "Software Engineering", "Maturity Models", "Management Information Systems", "Integrated Project Support Environments" "Object Orientation" and "Business Process Re-engineering" (the latter three being known as IPSE, OO and BPR, respectively).
      -- Edsger W. Dijkstra — EWD 1175: The strengths of the academic enterprise [Today we could add 'Extreme Programming', 'Agile Software Development' and many more.]
 %
 They won't tell you that they don't understand it; they will happily invent their way through the gaps and obscurities.
@@ -894,13 +894,13 @@ Things which any idiot could write usually have the quality of having been writt
 In programming the hard part isn't solving problems, but deciding what problems to solve.
      -- Paul Graham
 %
-[POSIX] unifying unix? more like formalizing historical design mistakes made by major vendors…
+[POSIX] unifying unix? more like formalizing historical design mistakes made by major vendors...
      -- ttyv0
 %
 Do I really want to be using a language where memoize is a PhD-level topic?
      -- Mark Engelberg about Haskell
 %
-The beauty of small and simple code is that you can bend or break the rules as long it stays small and simple. Rules allow people to write code without thinking. [And when] you dont think […] you get bloated code that just concatenates stupid patterns.
+The beauty of small and simple code is that you can bend or break the rules as long it stays small and simple. Rules allow people to write code without thinking. [And when] you dont think [...] you get bloated code that just concatenates stupid patterns.
 
 People stop thinking and questioning [and] then its just worshipping some rules without any pruporse.
      -- Cinap Lenrek
