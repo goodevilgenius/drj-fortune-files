@@ -182,7 +182,6 @@ UNIX was not designed to stop its users from doing stupid things, as that would 
 If you're willing to restrict the flexibility of your approach, you can almost always do something better.
      -- John Carmack
 %
-
 And folks, let's be honest. Sturgeon was an optimist. Way more than 90% of code is crap.
      -- viro [http://www.ussg.iu.edu/hypermail/linux/kernel/0310.0/0870.html]
 %
@@ -224,9 +223,6 @@ Mathematicians stand on each others' shoulders and computer scientists stand on 
 %
 It's not that Perl programmers are idiots, it's that the language rewards idiotic behavior in a way that no other language or tool has ever done.
      -- Erik Naggum, comp.lang.lisp
-%
-Out-of-band == should be on a separate channel...
-     -- Al Viro
 %
 It's a curious thing about our industry: not only do we not learn from our mistakes, we also don't learn from our successes.
      -- Keith Braithwaite
@@ -281,125 +277,7 @@ Russ
 You want to make your way in the CS field? Simple. Calculate rough time of amnesia (hell, 10 years is plenty, probably 10 months is plenty), go to the dusty archives, dig out something fun, and go for it. It's worked for many people, and it can work for you.
      -- Ron Minnich
 %
-From: Alexander Viro <viro math psu edu>
-Subject: Re: ANNOUNCE: Linux Kernel ORB: kORBit
-Date: Sat, 9 Dec 2000 00:39:36 -0500 (EST)
-
-[...]
-
-Yeah... "Infinitely extendable API" and all such. Roughly translated
-as "we can't live without API bloat". Frankly, judging by the GNOME
-codebase people who designed the thing[GNOME] are culturally incompatible with
-UNIX.
-
-> What's wrong with perl?
-
-It combines all the worst aspects of C and Lisp: a billion different
-sublanguages in one monolithic executable.  It combines the power of
-C with the readability of PostScript.
-
-> To me perl is the triumph of utalitarianism.
-
-So are cockroaches.  So is `sendmail'.
-     -- jwz [http://groups.google.com/groups?selm=33F4D777.7BF84EA3%40netscape.com]
-%
-From: ron minnich <rminnich@lanl.gov>
-Subject: [9fans] microkernels
-
-are they the O-O of the OS world? Always the promises ...
-
-ron
-%
-Subject: Re: BK, deltas, snapshots and fate of -pre...
-From: Alexander Viro (viro@math.psu.edu)
-Url: http://groups.google.com/group/fa.linux.kernel/msg/caede4c7fd703c4e
-
-[...]
-
-Sigh... When it comes to software there are three systems of beliefs.
-One of them:
-
-    * Thou shalt know by your heart that all software sucks.
-    * Beware of those who say that their software does not suck, for they
-      are either fools or liars.
-    * Beware of those who give you garments and do not allow to mend them,
-      for sooner or later thou shalt find what needs mending.
-    * But beware also of those who give you badly rotten garments and say
-      "Thou shalt prefer that above everything, for thou art allowed to
-      mend it".
-    * Thou shalt not treat software as a living being, for it is not one.
-    * Choose a license of thine liking for sofware thou writest and do not
-      blame those who choose differently for software they write.
-    * Know when to say "It can be mended, I shalt do that" and when to
-      say "It is rotten beyond repair".
-    * Choose free over non-free when it is better or when thou art willing
-      to fix what is broken.
-    * When shit happens, think how to fix it.
-
-Another:
-
-    * All software wants to be free
-    * Thou shalt not use non-free software
-    * Thou shalt not mention non-free software
-    * Thou shalt make all thine software free
-    * Thou shalt choose free above working, even if free one is broken
-      beyond repair
-    * When shit happens, add new features
-
-and the last one:
-
-    * Our 3133t! K3wl! Software! Does Not Suck!!!
-    * Always choose our software above everything else
-    * When shit happens, we add new features
-
-If you happen to believe in second variant, you have my condolence as
-long as you don't force your beliefs on everybody else. If you choose
-to emulate door-to-door pests^H^H^H^Hreachers - don't expect to be
-treated differently.
-
-People do have a right to put their code under whatever license they like. Now, I won't use the stuff I don't have a source for unless I have exceptionally good reason to believe that authors of that stuff are among the few percents of programmers who can find their arse without outside help. But that has nothing to do with licensing or any moral considerations and everything to the fact that I know what kind of crap most of the software is.
-     -- Al Viro on linux-kernel
-%
-Linus Torvalds wrote:
-> Ehh.. Telling people "don't do that" simply doesn't work. Not if they can
-> do it easily anyway. Things really don't get fixed unless people have a
-> certain pain-level to induce it to get fixed.
-
-Umm... How about the following:  you hit delete on patches that introduce
-new ioctls, I help to provide required level of pain.  Deal?
-     -- Al Viro on linux-kernel
-%
-James Simmons wrote:
-> Crap can work. Given enough thrust pigs will fly, but it's not necessary a
-> good idea.                                 [ Alexander Viro on linux-kernel ]
-
-Watch the attributions.
-
-With sufficient thrust, pigs fly just fine.
-However, this is not necessarily a good idea.
-It is hard to be sure where they are going to land,
-and it could be dangerous sitting under them as they fly overhead.
-        From RFC1925, R Callon, 1996.
-     -- Al Viro on linux-kernel
-%
-In the same world where Vomit-Making System is elegant, SGI "designs" are and NT is The Wave Of Future™. Pardon me, but I'll stay in our universe and away from the drugs of such power.
-     -- Al Viro on linux-kernel
-%
-> > Or even XML. Ouch! No need to throw things at me!
->
-> It seems they would be thrown! XML in kernel is too much. OpenOffice and
-
-They won't be thrown.  They will be slowly driven under the nails, so that
-victim could experience the joy equal to that of dealing with XML.
-     -- Alexander Viro on linux-kernel
-%
 A Professor of Computer Science gave a paper on how he uses Linux to teach his undergraduates about operating systems. Someone in the audience asked why use Linux rather than Plan 9?' and the professor answered:Plan 9 looks like it was written by experts; Linux looks like something my students could aspire to write'.
-%
-Computer: Your nominators and endorsers for the Kanai Award consistently characterized your work as simple yet powerful. How do you discover such powerful abstractions?
-
-Ken Thompson: It is the way I think. I am a very bottom-up thinker. If you give me the right kind of Tinker Toys, I can imagine the building. I can sit there and see primitives and recognize their power to build structures a half mile high, if only I had just one more to make it functionally complete. I can see those kinds of things.
-
-The converse is true, too, I think. I can't from the building imagine the Tinker Toys. When I see a top-down description of a system or language that has infinite libraries described by layers and layers, all I just see is a morass. I can't get a feel for it. I can't understand how the pieces fit; I can't understand something presented to me that's very complex. Maybe I do what I do because if I built anything more complicated, I couldn't understand it. I really must break it down into little pieces.
 %
 if you're capable of understanding `finalised virtual hyperstationary factory class', remembering the Java class hierarchy, and all the details of the Java Media Framework, you are (a) a better man than i am (b) capable of filling your mind with large chunks of complexity, so concurrent programming should be simple by comparison. go for it.
 
