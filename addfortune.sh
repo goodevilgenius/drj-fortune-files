@@ -21,6 +21,12 @@ then
 	echo "$@" >> "${DIR}/${FILE}"
 fi
 
+if [ -d "$DIR/.git" ]
+then
+	git --work-tree="$DIR" --git-dir="$DIR/.git" add "$FILE"
+	git --work-tree="$DIR" --git-dir="$DIR/.git" commit -m "Added quote by $*"
+fi 
+
 ##
 ## addfortune.sh
 ## 
