@@ -53,7 +53,7 @@ fi
 ## Made by Dan Jones
 ## Email   <dan@danielrayjones.com>
 ## 
-## Last update Tue Jun 18 22:09:25 EDT 2013 Dan Jones
+## Last update Fri Apr 15 14:28:48 CDT 2016
 ##
 ## Gist: 5545072
 ## 
