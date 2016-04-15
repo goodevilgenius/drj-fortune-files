@@ -32,8 +32,12 @@ if [ "$1" = "-p" ]; then
 			shift
 		fi
 	done
-	[ -z "$title" ] && title="Quote by $*"
-	coms=( "${coms[@]}" -i text "$(cat "$quote")" -i source "$*" "$title" )
+	[ -z "$title" -a -n "$1" ] && title="Quote by $*"
+	[ -z "$title" -a -z "$1" ] && title="Quote"
+	if [ -n "$1" ]; then
+		coms=( "${coms[@]}" -i source "$*" )
+	fi
+	coms=( "${coms[@]}" -i text "$(cat "$quote")" "$title" )
 	drop-a-log pile "${coms[@]}"
 fi 
 
