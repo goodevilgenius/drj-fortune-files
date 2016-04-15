@@ -1,28 +1,48 @@
-#!/bin/sh
+#!/bin/bash
 
 DIR="${HOME}/.fortune/files"
 FILE="quotes-$(date +%Y-%m)"
+quote=`mktemp`
 
 [ ! -d "$DIR" ] && mkdir -p "$DIR"
 
-if [ -f "${DIR}/${FILE}" ]
-    then
+if [ -f "${DIR}/${FILE}" ]; then
     echo "%" >> ${DIR}/${FILE}
 fi
 
-while read line
-do
+while read line; do
 	echo "${line}"
-done | fmt -w 2500 >> "${DIR}/${FILE}"
+done | fmt -w 2500 | tee "$quote" >> "${DIR}/${FILE}"
 
-if [ -n "$1" ]
-then
+if [ "$1" = "-p" ]; then
+	# I'm adding it to my pile (github.com/goodevilgenius/pile)
+	shift
+
+	title=""
+	coms=( )
+	while [ "$1" = "-i" ]; do
+		shift
+		if [ "$1" = "title" ]; then
+			shift
+			title="$1"
+			shift
+		else
+			coms=( "${coms[@]}" -i "$1" "$2" )
+			shift
+			shift
+		fi
+	done
+	[ -z "$title" ] && title="Quote by $*"
+	coms=( "${coms[@]}" -i text "$(cat "$quote")" -i source "$*" "$title" )
+	drop-a-log pile "${coms[@]}"
+fi 
+
+if [ -n "$1" ]; then
 	echo -n "     -- " >> "${DIR}/${FILE}"
 	echo "$@" >> "${DIR}/${FILE}"
 fi
 
-if [ -d "$DIR/.git" ]
-then
+if [ -d "$DIR/.git" ]; then
 	git --work-tree="$DIR" --git-dir="$DIR/.git" add "$FILE"
 	git --work-tree="$DIR" --git-dir="$DIR/.git" commit -m "Added quote by $*"
 fi 
