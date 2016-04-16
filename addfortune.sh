@@ -37,7 +37,7 @@ if [ "$1" = "-p" ]; then
 	if [ -n "$1" ]; then
 		coms=( "${coms[@]}" -i source "$*" )
 	fi
-	coms=( "${coms[@]}" -i text "$(cat "$quote")" "$title" )
+	coms=( "${coms[@]}" -i text "$(cat "$quote")" -i type quote "$title" )
 	drop-a-log pile "${coms[@]}"
 fi 
 
@@ -57,7 +57,7 @@ fi
 ## Made by Dan Jones
 ## Email   <dan@danielrayjones.com>
 ## 
-## Last update Fri Apr 15 14:28:48 CDT 2016
+## Last update Sat Apr 16 08:57:23 CDT 2016
 ##
 ## Gist: 5545072
 ## 
