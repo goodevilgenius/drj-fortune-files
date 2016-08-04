@@ -1,7 +1,7 @@
 #!/bin/bash
 
-DIR="${HOME}/.fortune/files"
-FILE="quotes-$(date +%Y-%m)"
+DIR="$(dirname $(readlink -f "$0"))"
+FILE="files/quotes-$(date +%Y-%m)"
 quote=`mktemp`
 
 [ ! -d "$DIR" ] && mkdir -p "$DIR"
@@ -59,8 +59,6 @@ fi
 ## 
 ## Last update Sat Apr 16 08:57:23 CDT 2016
 ##
-## Gist: 5545072
-## 
 ## Copyright (c) 2013, Daniel Ray Jones
 ## All rights reserved.
 ##
